@@ -25,9 +25,9 @@ WINAPI SetRegKeyValue(HKEY hKeyMain,LPCSTR lpSubKey, LPCSTR lpValueName,DWORD dw
  * Meaning:                                   *
  *    Set Zone2's Option "Flags" = 67         *
  **********************************************/
-int SetIEZoneOption(int iZoneID,LPCSTR lpKey,DWORD lpValue){
+int SetIEZoneOption(DWORD iZoneID,LPCSTR lpKey,DWORD lpValue){
 	char cstrFullZonePath [65535];
-	sprintf( cstrFullZonePath, "Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\%i" , iZoneID );
+	sprintf( cstrFullZonePath, "Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\%d" , iZoneID );
 	SetRegKeyValue(HKEY_CURRENT_USER,cstrFullZonePath,lpKey,REG_DWORD,(CONST BYTE*)&lpValue,sizeof(DWORD));
 	
 }
