@@ -1,4 +1,4 @@
-#About/关于
+# About/关于
 
 Set IE security zone options and add a website to a security zone.
 
@@ -8,6 +8,6 @@ Developing
 
 开发中
 
-#References/参考资料
+# References/参考资料
 
-*[https://support.microsoft.com/en-us/help/182569/internet-explorer-security-zones-registry-entries-for-advanced-users Internet Explorer security zones registry entries for advanced users]
+*[Internet Explorer security zones registry entries for advanced users](https://support.microsoft.com/en-us/help/182569/internet-explorer-security-zones-registry-entries-for-advanced-users)
